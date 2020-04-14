@@ -1,4 +1,7 @@
 import click
+from kivia.utils import Utils
+
+util=Utils()
 
 def info():
   return {
@@ -17,5 +20,12 @@ def run():
   pass
 
 @run.command()
-def m():
-  pass
+def myip():
+  util.lolcatText("Hello Mac")
+  
+  
+  
+  
+run()
+
+#http://ip-api.com/json
