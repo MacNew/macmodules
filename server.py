@@ -21,11 +21,9 @@ def run():
 
 @run.command()
 def myip():
-  util.lolcatText("Hello Mac")
+  json=util.fetchData(util.GET,"http://ip-api.com/json",prefix="Fetching your ip").json()
+  util.showDatas("Your Ip Information",[json])
   
   
   
-  
-run()
 
-#http://ip-api.com/json
